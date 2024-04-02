@@ -19,7 +19,7 @@ export default function Header() {
           className="px-2 py-1 bg-gradient-to-r from-indigo-500
           via-purple-500 to-pink-500 rounded-lg text-white"
         >
-          Sahand's
+          SaaaK's
         </span>{" "}
         Blog
       </Link>
@@ -39,7 +39,7 @@ export default function Header() {
           <FaMoon />
         </Button>
         <Link to="/sign-in">
-          <Button gradientDuoTone='purpleToBlue'>
+          <Button gradientDuoTone='purpleToBlue' outline>
             Sign-In
           </Button>
         </Link>
