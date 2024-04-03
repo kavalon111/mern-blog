@@ -20,7 +20,7 @@ export default function Header() {
           via-purple-500 to-pink-500 rounded-lg text-white"
         >
           SaaaK's
-        </span>{" "}
+        </span>{""}
         Blog
       </Link>
       <form>
