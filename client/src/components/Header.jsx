@@ -2,16 +2,14 @@
 
 import { Button, Navbar, TextInput } from "flowbite-react";
 import React from "react";
-import { Link ,useLocation} from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { AiOutlineSearch } from "react-icons/ai";
 import { FaMoon } from "react-icons/fa";
 
 export default function Header() {
-    const path=useLocation().pathname;
+  const path = useLocation().pathname;
   return (
-<Navbar className="border-b-2" style={{ backgroundColor: "#FFE6E6", borderColor:"#7469B6" }} >
-
-
+    <Navbar className="border-b-4 border-purple-700" style={{ backgroundColor: "#FFE6E6" }}>
       <Link
         to="/"
         className="self-center whitespace-nowrap text-sm
@@ -41,29 +39,23 @@ export default function Header() {
           <FaMoon />
         </Button>
         <Link to="/sign-in">
-          <Button gradientDuoTone='purpleToBlue' outline>
+          <Button gradientDuoTone="purpleToBlue" outline>
             Sign-In
           </Button>
         </Link>
-        <Navbar.Toggle/>
+        <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-            <Navbar.Link active={path=="/"} as={'div'}>
-                <Link to='/'>
-                    Home
-                </Link>
-            </Navbar.Link>
-            <Navbar.Link active={path=="/about"} as={'div'}>
-                <Link to='/about'>
-                    About
-                </Link>
-            </Navbar.Link>
-            <Navbar.Link active={path=="/project"}as={'div'}>
-                <Link to='/project'>
-                    Projects
-                </Link>
-            </Navbar.Link>
-        </Navbar.Collapse>
+        <Navbar.Link active={path == "/"} as={"div"}>
+          <Link to="/">Home</Link>
+        </Navbar.Link>
+        <Navbar.Link active={path == "/about"} as={"div"}>
+          <Link to="/about">About</Link>
+        </Navbar.Link>
+        <Navbar.Link active={path == "/project"} as={"div"}>
+          <Link to="/project">Projects</Link>
+        </Navbar.Link>
+      </Navbar.Collapse>
     </Navbar>
   );
 }
