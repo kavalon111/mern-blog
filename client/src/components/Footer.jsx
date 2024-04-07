@@ -7,7 +7,7 @@ import { BsFacebook, BsInstagram, BsGithub,BsX ,BsDribbble}from 'react-icons/bs'
 
 export default function FooterCom() {
   return (
-    <Footer container className="border border-t-4 border-purple-700 "style={{ backgroundColor: "#FFE6E6" }}>
+    <Footer container className="border border-t-4 border-purple-700 ">
       <div className="w-full max-w-7xl mx-auto">
         <div className="grid w-full justify-between sm:flex md:grid-cols-1">
           <div className="m1-5">
