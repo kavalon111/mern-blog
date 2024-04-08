@@ -26,14 +26,16 @@ export default function DashSidebar() {
               icon={HiUser}
               label={"User"}
               labelColor="dark"
+              as='div'
             >
               Profile
             </Sidebar.Item>
           </Link>
           <Link to="/sign-out" style={{ textDecoration: "none" }}>
-            <Sidebar.Item icon={HiArrowSmRight} className="cursor-pointer">
+            <Sidebar.Item icon={HiArrowSmRight} className="cursor-pointer ">
               Sign out
             </Sidebar.Item>
+            
           </Link>
         </Sidebar.ItemGroup>
       </Sidebar.Items>
