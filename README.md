@@ -1,0 +1,1 @@
+This blog application allows users to write and publish their own blogs, as well as listen to blogs using integrated text-to-speech functionality powered by ChatGPT APIs. The application also features an admin dashboard for managing blog content. Built with React, Redux, Firebase, and ChatGPT APIs.
