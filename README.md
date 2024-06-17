@@ -1,4 +1,3 @@
-Blog Application
 Description
 This is a blog application where users can create, edit, and delete their blog posts, leave comments on posts, edit and delete their comments, and interact with posts by liking them. The application also includes account management functionalities where users can edit their account details.
 
